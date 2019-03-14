@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueDark">
+
+        <ImageButton
+            android:id="@+id/MainFragment_ImageView_MenuToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/list_effect"
+            android:src="@drawable/list"
+            android:contentDescription="@string/image_menu_toggle" />
+
+        <TextView
+            android:id="@+id/MainFragment_TextView_ProtocolTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/none"
+            android:textColor="@color/colorWhite"
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/MainFragment_TextView_ProtocolTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/protocol_time"
+                android:textColor="@color/colorWhite"
+                android:textSize="7pt" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/MainFragment_ImageView_LED_Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/led_gray"
+                    android:contentDescription="@string/image_led_blue" />
+
+                <ImageView
+                    android:id="@+id/MainFragment_ImageView_LED_Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/led_gray"
+                    android:contentDescription="@string/image_led_red" />
+
+                <ImageView
+                    android:id="@+id/MainFragment_ImageView_LED_Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/led_gray"
+                    android:contentDescription="@string/image_led_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/chamber"
+            android:textColor="@color/colorBlueDark"
+            android:textSize="5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/lid_heater"
+            android:textColor="@color/colorBlueDark"
+            android:textSize="5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/preheat"
+            android:textColor="@color/colorBlueDark"
+            android:textSize="5pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/MainFragment_TextView_Chamber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/chamber_value"
+            android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/MainFragment_TextView_LidHeater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/lid_heater_value"
+            android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/MainFragment_TextView_Preheat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/preheat_value"
+            android:textSize="5pt" />
+    </LinearLayout>
+<!-- ActionGraph
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <com.biomedux.duxcycler.mypcrbluetoothle.ui.ActionGraph
+            android:id="@+id/MainFragment_ActionGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </HorizontalScrollView >
+-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueGray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/label"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/temp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/time"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/remain"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <com.biomedux.duxcycler.ui.ActionTable
+            android:id="@+id/MainFragment_ActionTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.biomedux.duxcycler.ui.ActionTable>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueDark">
+
+        <TextView
+            android:id="@+id/MainFragment_TextView_Work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/start"
+            android:textSize="10pt"
+            android:textColor="@color/colorWhite"/>
+
+        <LinearLayout
+            android:id="@+id/MainFragment_LinearLayout_Work"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/MainFragment_TextView_Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/cancel"
+                android:textSize="10pt"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/MainFragment_TextView_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/add"
+                android:textSize="10pt"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/MainFragment_TextView_Commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/commit"
+                android:textSize="10pt"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biomedux.duxcycler.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/MainActivity_LinearLayout_MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/fragment_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MainActivity_LinearLayout_MenuShadow"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="73dp"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/MainActivity_LinearLayout_MenuFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="73dp"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/fragment_menu" />
+    </LinearLayout>
+
+</FrameLayout>

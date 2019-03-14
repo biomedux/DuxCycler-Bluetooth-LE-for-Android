@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- application -->
+
+    <string name="app_name">DuxCycler</string>
+    <string name="app_version">version 1.0</string>
+
+
+    <!-- common -->
+
+    <string name="label">Label</string>
+    <string name="temp">Temp</string>
+    <string name="time">Time</string>
+    <string name="remain">Remain</string>
+
+
+    <!-- intro activity -->
+
+    <string name="image_logo">LabGenomics</string>
+
+
+    <!-- main fragment -->
+
+    <string name="image_menu_toggle">Menu Toggle</string>
+    <string name="image_led_red">LED Red</string>
+    <string name="image_led_green">LED Green</string>
+    <string name="image_led_blue">LED Blue</string>
+
+    <string name="none">(none)</string>
+    <string name="protocol_time">00:00:00</string>
+
+    <string name="chamber">Chamber</string>
+    <string name="lid_heater">LID HEATER</string>
+    <string name="preheat">Preheat</string>
+
+    <string name="chamber_value">0.0ºC</string>
+    <string name="lid_heater_value">0.0ºC</string>
+    <string name="preheat_value">104</string>
+
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="commit">Commit</string>
+
+
+    <!-- menu fragment -->
+
+    <string name="image_add">Protocol Add</string>
+    <string name="new_protocol">New Protocol</string>
+
+
+    <!-- action editer -->
+
+    <string name="GOTO">GOTO</string>
+
+    <!-- DeviceList Activity -->
+
+    <string name="mypcr_scanning">Scanning</string>
+
+</resources>
